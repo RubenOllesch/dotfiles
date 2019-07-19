@@ -14,6 +14,6 @@ prompt walters
 
 zstyle ':completion:*' menu select
 zstyle ':completion:*' gain-privileges 1
-setopt COMPLETE_ALIASES
+setopt no_complete_aliases
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
