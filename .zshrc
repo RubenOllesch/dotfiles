@@ -17,3 +17,5 @@ zstyle ':completion:*' gain-privileges 1
 setopt no_complete_aliases
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+source .profile
