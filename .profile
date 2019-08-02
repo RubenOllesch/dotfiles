@@ -1,5 +1,6 @@
 export VISUAL=vim
 export EDITOR=vim
+export TERMINAL=st
 
 export QT_STYLE_OVERRIDE=kvantum
 
