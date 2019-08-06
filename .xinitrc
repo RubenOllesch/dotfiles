@@ -37,9 +37,12 @@ fi
 
 # start window manager / desktop environment
 
-session=${1:-dwm}
+session=${1:-i3}
 
 case $session in
+	i3)	exec i3;;
 	dwm)	exec dwm;;
+	gnome)	export GDK_BACKEND=x11; exec gnome-session;;
+	kde)	exec startkde;;
 	*)	exec $1;;
 esac
