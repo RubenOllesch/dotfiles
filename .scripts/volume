@@ -1,0 +1,12 @@
+#!/bin/sh
+
+
+case $1 in
+	inc)		pulsemixer --change-volume +5;;
+	dec)		pulsemixer --change-volume -5;;
+	toggle)		pulsemixer --toggle-mute --id sink-0;;
+	mictoggle)	pulsemixer --toggle-mute --id source-1;;
+esac
+
+
+pkill -SIGRTMIN+10 i3blocks
