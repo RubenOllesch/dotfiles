@@ -1,0 +1,18 @@
+#!/bin/sh
+
+status="$(cat /sys/class/power_supply/BAT0/status)"
+
+case $status in
+	"Charging"|"Full"|"Unknown")	icon=🔌;;
+	"Discharging")			icon=🔋;;
+	*)				icon=$status;;
+esac
+
+echo $icon $(cat /sys/class/power_supply/BAT0/capacity)%
+
+
+
+
+case $BLOCK_BUTTON in
+	1)	notify-send Battery "$(acpi -b | cut -d , -f 3 | cut -c2-)";;
+esac

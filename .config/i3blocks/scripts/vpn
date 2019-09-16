@@ -1,0 +1,12 @@
+#!/bin/sh
+
+case $BLOCK_BUTTON in
+	1)
+		if [ "$(expressvpn status)" = "Not connected" ]; then
+			expressvpn connect
+		else
+			expressvpn disconnect
+		fi;;
+esac
+
+expressvpn status | sed 1q | sed 's/\x1b\[[0-9;]*m//g' | sed 's/^Connected to //'

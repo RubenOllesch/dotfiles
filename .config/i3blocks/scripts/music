@@ -1,0 +1,12 @@
+#!/bin/sh
+
+case $BLOCK_BUTTON in
+	1) pgrep -x dunst >/dev/null && notify-send "$(mpc status | sed 2q)" ;;
+	2) mpc toggle ;;
+esac
+
+
+status=$(mpc status | grep -Eo '(paused|playing)')
+isPaused=$([ "$status" == paused ] && echo true || echo false)
+
+echo "<span font_style='italic' strikethrough='${isPaused}'>$(mpc current)</span>"
