@@ -5,7 +5,7 @@ export TERMINAL=st
 export QT_STYLE_OVERRIDE=kvantum
 
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-
+alias countryroads='cd ~'
 
 if [ ! $DISPLAY ] && [ $XDG_VTNR -eq 1 ]; then
 	exec xinit
