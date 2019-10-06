@@ -3,7 +3,7 @@ HISTSIZE=5000
 SAVEHIST=10000
 setopt appendhistory autocd notify
 unsetopt beep extendedglob
-bindkey -v
+bindkey -e
 zstyle :compinstall filename '/home/ruben/.zshrc'
 
 autoload -Uz compinit promptinit
