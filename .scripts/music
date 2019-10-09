@@ -1,0 +1,12 @@
+#!/bin/sh
+
+
+case $1 in
+	toggle)		mpc toggle;;
+	stop)		mpc stop;;
+	next)		mpc next;;
+	prev)		mpc prev;;
+esac
+
+
+pkill -SIGRTMIN+11 i3blocks

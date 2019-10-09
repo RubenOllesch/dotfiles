@@ -50,6 +50,18 @@
 	XF86AudioLowerVolume
 
 
+"/home/ruben/.scripts/music toggle"
+	XF86AudioPlay
+
+"/home/ruben/.scripts/music stop"
+	XF86AudioStop
+
+"/home/ruben/.scripts/music next"
+	XF86AudioNext
+
+"/home/ruben/.scripts/music prev"
+	XF86AudioPrev
+
 ##################################
 # End of xbindkeys configuration #
 ##################################
