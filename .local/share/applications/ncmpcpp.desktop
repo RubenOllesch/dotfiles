@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ncmpcpp
+Type=Application
+Comment=mpd client
+Terminal=true
+Exec=ncmpcpp
+Icon=ncmpcpp
+Categories=ConsoleOnly;
+GenericName=Music Player
+Keywords=music;media;player;song
