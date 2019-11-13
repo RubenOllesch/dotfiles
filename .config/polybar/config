@@ -222,6 +222,7 @@ label = %percentage_used%%
 type = custom/script
 exec = ~/.config/polybar/vpn status
 click-left = ~/.config/polybar/vpn menu
+click-right= ~/.config/polybar/vpn disconnect
 format-underline = #c9252c
 
 [module/wlan]
