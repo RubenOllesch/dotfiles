@@ -62,6 +62,9 @@
 "/home/ruben/.scripts/music prev"
 	XF86AudioPrev
 
+
+"/home/ruben/.scripts/unicode"
+	Alt + i
 ##################################
 # End of xbindkeys configuration #
 ##################################
