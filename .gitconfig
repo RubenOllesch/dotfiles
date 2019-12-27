@@ -1,5 +1,5 @@
 [user]
-	email = ruben.ollesch@pm.me
+	email = r.l.ollesch@student.utwente.nl
 	name = Ruben Ollesch
 [filter "lfs"]
 	clean = git-lfs clean -- %f
