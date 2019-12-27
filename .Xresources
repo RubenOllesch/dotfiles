@@ -1,1 +1,6 @@
 #include ".Xresources.d/ArcDark"
+
+*.alpha: 0.95
+
+*.font: Monospace-9
+
