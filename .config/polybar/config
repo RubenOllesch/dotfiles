@@ -55,7 +55,7 @@ font-2 = siji:pixelsize=10;1
 
 modules-left = i3
 modules-center = xwindow
-modules-right = mpd xbacklight pulseaudio temperature expressvpn wlan eth battery date
+modules-right = mpd pulseaudio temperature expressvpn wlan eth battery date
 
 tray-position = right
 tray-padding = 2
